@@ -548,5 +548,21 @@
     <!-- custom JavaScript -->
     <script src="js/custom-v2.js"></script>
 
+    <!-- In the About section's carousel initialization, use Unicode arrows for navText -->
+    <script>
+    // ... existing code ...
+    $('.about .owl-carousel').owlCarousel({
+        loop: true,
+        items: 1,
+        margin: 30,
+        dots: false,
+        nav: true,
+        navText: ['<span style="font-size:2rem;">&#8592;</span>', '<span style="font-size:2rem;">&#8594;</span>']
+    });
+    // ... existing code ...
+    </script>
+    <!-- If the initialization is only in custom-v2.js, add a comment here for clarity -->
+    <!-- Carousel navigation arrows now use Unicode arrows to avoid icon font issues -->
+
   </body>
 </html>
